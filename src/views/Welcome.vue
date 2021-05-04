@@ -1,6 +1,9 @@
 <template>
     <div class="welcome">
-        <router-link to="/home"><b-button id="btn">Check us Out</b-button></router-link>
+        <h1>Welcome</h1>
+        <h1 style="margin-top:-45vh">to WebDevils</h1>
+
+        <router-link to="/home"><b-button variant="light" id="btn">Check us Out</b-button></router-link>
 
         <svg id="svg1" xmlns="http://www.w3.org/2000/svg" xml:lang="en"
         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
@@ -33,6 +36,11 @@ div {
     overflow: hidden;
 }
 
+h1{
+    color: white;
+    font-size: 4rem;
+}
+
 svg {
     width: 100px;
     position: absolute;
@@ -50,13 +58,13 @@ text {
 }
 
 button {
+    margin-top: -60vh;
     background: #D95961;
     border: none;
-    outline: none;
     padding: 2em;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    letter-spacing: .3em;
+    letter-spacing: .2em;
     font-size: .9rem;
     cursor: pointer;
 }
