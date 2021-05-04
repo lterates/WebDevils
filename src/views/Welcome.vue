@@ -1,8 +1,8 @@
 <template>
     <div class="welcome">
-        <b-button>Check us Out</b-button>
+        <router-link to="/home"><b-button id="btn">Check us Out</b-button></router-link>
 
-        <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"
+        <svg id="svg1" xmlns="http://www.w3.org/2000/svg" xml:lang="en"
         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
         <title>Circular Text Path</title>
 
@@ -23,7 +23,7 @@
 </template>
 
 <style scoped>
-body {
+div {
     background: #D33F49;
     font-family: 'Poppins';
     margin: 0;
@@ -70,3 +70,35 @@ button {
     }
 }
 </style>
+
+<script>
+
+
+export default({
+   name: "Welcome",
+   mounted(){
+    const circleSvg = document.getElementById('svg1')
+    const btn = document.getElementById('btn')
+
+    let mouseX = 0
+    let mouseY = 0
+    window.addEventListener('mousemove', (event) => {
+        mouseY = (event.clientY / 16) - (45 / 16) + 'rem'
+        mouseX = (event.clientX / 16) - (45 / 16) + 'rem'
+    })
+    const mouseMove = () => {
+        circleSvg.style.top = mouseY
+        circleSvg.style.left = mouseX
+        window.requestAnimationFrame(mouseMove)
+    }
+    mouseMove()
+        /*let tl = gsap.timeline({defaults: {ease: "power2.inOut"}})
+        tl.to(circleSvg, {width: 0, opacity: 0})
+        tl.to('body, button', {background: 'white'})
+        tl.pause()*/
+    btn.addEventListener('click', () => {
+        console.log("play")
+    })
+   }
+})
+</script>
