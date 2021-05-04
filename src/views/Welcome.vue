@@ -1,7 +1,7 @@
 <template>
     <div class="welcome">
         <b-button>Check us Out</b-button>
-
+         <router-link to="/home"><b-button>OTHER PAGE</b-button></router-link>
         <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"
         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
         <title>Circular Text Path</title>
