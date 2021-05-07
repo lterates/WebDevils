@@ -74,17 +74,16 @@ export default {
         window.requestAnimationFrame(mouseMove)
     }
     mouseMove()
-        /*let tl = gsap.timeline({defaults: {ease: "power2.inOut"}})
-        tl.to(circleSvg, {width: 0, opacity: 0})
-        tl.to('body, button', {background: 'white'})
-        tl.pause()
-        tl.then()*/
    }
 };
 
 </script>
 
 <style scoped>
+  div {
+    overflow: hidden;
+  }
+
   svg {
     width: 100px;
     position: absolute;
@@ -97,7 +96,7 @@ export default {
   text{
     font-family: 'Poppins';
     font-style: italic;
-    font-size: 4em;
+    font-size: 4.5em;
     fill: #D33F49;
   }
 
