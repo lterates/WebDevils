@@ -5,18 +5,18 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    private:true
+    newsLetterCheck:false
   },
   mutations: {
-    ACCEPT_PRIVACY_POLICY(state){
-      console.log("accepting privacy Policy")
-      state.private = false
+    CHECK_NEWS_LETTER(state){
+      console.log("Checking newsletter")
+      state.newsLetterCheck = true
     }
   },
   actions: {
   },
   getters:{
-    getPrivate:state=>state.private,
+    getNewsLetterCheck:state=>state.newsLetterCheck,
   },
   modules: {
 

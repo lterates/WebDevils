@@ -1,6 +1,7 @@
 <template>
   <div>
       <b-modal
+        id="modal-prevent-closing"
         title="Submit Your Email"
         v-model="newsLetterModal"
         centered
@@ -12,7 +13,7 @@
         <b-form-group
           label="Email"
           label-for="email-input"
-          invalid-feedback="É preciso Email"
+          invalid-feedback="Please insert your email or just click the 'cancel' button"
           :state="emailState"
         >
           <b-form-input
@@ -22,6 +23,15 @@
             required
           ></b-form-input>
         </b-form-group>
+        <b-form-checkbox
+            id="checkbox-1"
+            v-model="privacyCheck"
+            name="checkbox-1"
+            value="accepted"
+            unchecked-value="declined"
+        >
+      I accept the terms and use
+    </b-form-checkbox>
       </form>
     </b-modal>
   </div>
@@ -33,15 +43,21 @@ export default ({
         return{
             newsLetterModal: false,
             emailState: null,
-            email:''
+            email:'',
+            privacyCheck: 'declined',
         }
         
     },
 
     methods: {
         timedNewsLetter(){
-            console.log("timed activated")
-            setTimeout(()=>{this.newsLetterModal = true;}, 2000);
+            let newsLetterCheck = this.$store.getters.getNewsLetterCheck
+            if(newsLetterCheck == false){
+                console.log("timed activated")
+                setTimeout(()=>{this.newsLetterModal = true;}, 2000);
+                
+            }
+            
         },
 
         checkFormValidity() {
@@ -51,6 +67,7 @@ export default ({
         },
         resetModal() {
             this.email = ''
+            this.privacyCheck = 'declined'
             this.emailState = null
         },
         handleOk(bvModalEvt) {
@@ -64,9 +81,7 @@ export default ({
             if (!this.checkFormValidity()) {
             return
             }
-            // Push the name to submitted names
-            this.submittedNames.push(this.email)
-            // Hide the modal manually
+            this.$store.commit('CHECK_NEWS_LETTER')
             this.$nextTick(() => {
             this.$bvModal.hide('modal-prevent-closing')
             })
@@ -75,9 +90,7 @@ export default ({
     },
 
     mounted() {
-        this.$root.$on('timedNewsLetter', () => {
-            this.timedNewsLetter()
-        })
+        this.timedNewsLetter()
     }
     
 })

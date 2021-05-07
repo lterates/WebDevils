@@ -20,7 +20,6 @@
         </text>
     </svg>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-     <PrivacyModal/>
      <NewsLetter/>
   </div>
 </template>
@@ -29,7 +28,6 @@
 // @ is an alias to /src
 import NavBar from "@/components/navbar.vue";
 import Banner from "@/components/Banner.vue";
-import PrivacyModal from "@/components/PrivacyModal.vue"
 import NewsLetter from "@/components/NewsLetter.vue"
 
 export default {
@@ -37,7 +35,6 @@ export default {
   components: {
     NavBar,
     Banner,
-    PrivacyModal,
     NewsLetter
   },
 

@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Welcome from "../views/Welcome.vue"
 import Pricing from "../views/Pricing.vue"
+import Blog from "../views/Blog.vue"
 
 Vue.use(VueRouter);
 
@@ -31,7 +32,13 @@ const routes = [
     path: "/pricing",
     name: "Pricing",
     component: Pricing,
+  },
+  {
+    path: "/blog",
+    name: "Blog",
+    component: Blog,
   }
+  
 ];
 
 const router = new VueRouter({
