@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Welcome from "../views/Welcome.vue"
+import Pricing from "../views/Pricing.vue"
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,12 @@ const routes = [
     path: "/",
     name: "Welcome",
     component: Welcome,
+  },
+
+  {
+    path: "/pricing",
+    name: "Pricing",
+    component: Pricing,
   }
 ];
 

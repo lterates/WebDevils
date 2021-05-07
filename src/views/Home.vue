@@ -2,6 +2,7 @@
   <div class="home">
      <NavBar/>
      <Banner/>
+     <!-- ~~~~~~~~~~~~~~CURSOR FOLLOW~~~~~~~~~~~~~~~~ -->
      <svg id="svg1" xmlns="http://www.w3.org/2000/svg" xml:lang="en"
         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
         <title>Cursor</title>
@@ -18,6 +19,7 @@
                     textLength="942">GET STARTED TODAY .</textPath>
         </text>
     </svg>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
      <PrivacyModal/>
      <NewsLetter/>
   </div>
