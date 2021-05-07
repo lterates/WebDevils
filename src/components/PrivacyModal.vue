@@ -1,13 +1,13 @@
 <template>
   <div>
-    <b-modal hide-footer   v-model="privacyModal" centered title="Acordo de Privacidade">
+    <b-modal hide-footer v-model="privacyModal" centered title="Acordo de Privacidade">
         <b-container fluid class="text-center">
         <b-row align-v="center">
            <b-col>
-               <b-button variant="primary" @click="accept()">Aceitar</b-button>
+               <b-button style="background-color: #D33F49; border: none;" class="p-3" variant="primary" @click="accept()">Aceitar</b-button>
             </b-col> 
             <b-col>
-                <b-button variant="secondary" @click="refuse()">Recusar</b-button>
+                <b-button variant="dark" class="p-3" @click="refuse()">Recusar</b-button>
             </b-col>
         </b-row>
         </b-container>
@@ -36,9 +36,6 @@ export default ({
         }
      
     },
-
-  
-
 
      mounted(){
           this.privacyModal = true

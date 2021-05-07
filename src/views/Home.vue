@@ -93,6 +93,7 @@ export default {
     pointer-events: none;
     transition: top 1s, left 1s;
     transition-timing-function: ease-out;
+    z-index: 9999;
   }
 
   text{
