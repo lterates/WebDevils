@@ -29,6 +29,7 @@
 div {
     background: #D33F49;
     font-family: 'Poppins';
+    font-style: italic;
     margin: 0;
     height: 100vh;
     display: grid;
@@ -53,7 +54,7 @@ svg {
 text {
     font-size: 4em;
     font-family: 'Poppins';
-    font-weight: bold;
+    font-style: italic;
     fill: white
 }
 
@@ -61,6 +62,7 @@ button {
     margin-top: -60vh;
     background: #D95961;
     border: none;
+    font-style: italic;
     padding: 2em;
     text-transform: uppercase;
     color: rgb(255, 255, 255);

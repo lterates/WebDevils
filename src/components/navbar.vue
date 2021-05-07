@@ -1,16 +1,16 @@
 <template>
     <div>
-    <b-navbar style="background-color: #D33F49;" type="dark" >
-        <b-navbar-brand href="#">
-            <b-img src="../assets/logo-white.png" width="50%" class="mr-4" fluid alt="WebDevils Logo"/>
+    <b-navbar type="dark" >
+        <b-navbar-brand href="#" style="color: #D33F49; font-size: 2rem">
+            <b-img src="../assets/logo.png" width="70%" class="mr-4" alt="WebDevils Logo"/>
         WebDevils</b-navbar-brand>
 
         <b-collapse id="nav-collapse" is-nav>
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto mr-4">
                 <!-- CADA UM DESTES NAV ITEMS TERÁ UM ROUTER LINK ASSOCIADO -->
-                <b-nav-item class="mr-4">Apply Now</b-nav-item>
-                <b-nav-item class="mr-4">Our Team</b-nav-item>
+                <a style="color:#D33F49" href="#" class="mr-4 nav-link">Apply Now</a>
+                <a style="color:#D33F49" href="#" class="mr-4 nav-link">Our Team</a>
             </b-navbar-nav>
         </b-collapse>
     </b-navbar>
@@ -20,5 +20,6 @@
 <style scoped>
     div {
         font-family: 'Poppins';
+        font-style: italic;
     }
 </style>
