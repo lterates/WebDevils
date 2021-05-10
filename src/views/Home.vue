@@ -21,6 +21,7 @@
     </svg>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
      <NewsLetter/>
+     <Footer/>
   </div>
 </template>
 
@@ -29,29 +30,25 @@
 import NavBar from "@/components/navbar.vue";
 import Banner from "@/components/Banner.vue";
 import NewsLetter from "@/components/NewsLetter.vue"
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: "Home",
   components: {
     NavBar,
     Banner,
-    NewsLetter
+    NewsLetter,
+    Footer
   },
-
 
   data: () => ({
     
-
   }),
 
   methods:{
     function(){
 
     }
-
-
-  
-
   },
 
   beforeMount(){
@@ -75,7 +72,6 @@ export default {
     mouseMove()
    }
 };
-
 </script>
 
 <style scoped>
