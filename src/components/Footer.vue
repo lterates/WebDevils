@@ -29,4 +29,8 @@ export default ({
     a {
         color: #D33F49;
     }
+
+    a:hover {
+        color: black;
+    }
 </style>
