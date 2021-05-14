@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Welcome from "../views/Welcome.vue"
 import Pricing from "../views/Pricing.vue"
 import Blog from "../views/Blog.vue"
+import OurTeam from "../views/OurTeam.vue"
 
 Vue.use(VueRouter);
 
@@ -37,6 +38,12 @@ const routes = [
     path: "/blog",
     name: "Blog",
     component: Blog,
+  },
+
+  {
+    path: "/ourTeam",
+    name: "OurTeam",
+    component: OurTeam,
   }
   
 ];

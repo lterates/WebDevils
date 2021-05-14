@@ -11,7 +11,7 @@
                 <!-- CADA UM DESTES NAV ITEMS TERÁ UM ROUTER LINK ASSOCIADO -->
                 <a style="color:#D33F49" href="#" class="mr-4 nav-link">Get Started</a>
                 <router-link to="/pricing"><a style="color:#D33F49" class="mr-4 nav-link">Pricing</a></router-link>
-                <a style="color:#D33F49" href="#" class="mr-4 nav-link">Our Team</a>
+                <router-link to="ourTeam"><a style="color:#D33F49" href="#" class="mr-4 nav-link">Our Team</a></router-link>
                 <router-link to="/blog"><a style="color:#D33F49" href="#" class="mr-4 nav-link">Blogs</a></router-link>
             </b-navbar-nav>
         </b-collapse>
