@@ -55,7 +55,7 @@ export default ({
             if(newsLetterCheck == false){
                 console.log("timed activated")
                 setTimeout(()=>{this.newsLetterModal = true;}, 2000);
-                
+                this.$store.commit("CHECK_NEWS_LETTER")
             }
             
         },
