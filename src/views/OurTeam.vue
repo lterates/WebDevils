@@ -20,6 +20,7 @@
         </svg>
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div id="team">
+        <h1>Our Team</h1>
         <b-container>
             <b-row>
                 <b-col>
@@ -101,6 +102,14 @@ import NavBar from "@/components/navbar.vue";
 
 
 <style scoped>
+h1{
+    text-align: start;
+    margin-bottom: 5%;
+    font-family: 'Poppins';
+    font-style: oblique;
+    font-size: 3.5em;
+    color: #D33F49;
+}
 #team{
     margin:10%;
 }

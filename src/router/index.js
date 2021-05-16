@@ -5,6 +5,7 @@ import Welcome from "../views/Welcome.vue"
 import Pricing from "../views/Pricing.vue"
 import Blog from "../views/Blog.vue"
 import OurTeam from "../views/OurTeam.vue"
+import GetStarted from "../views/GetStarted.vue"
 
 Vue.use(VueRouter);
 
@@ -44,6 +45,12 @@ const routes = [
     path: "/ourTeam",
     name: "OurTeam",
     component: OurTeam,
+  },
+
+  {
+    path: "/getStarted",
+    name: "GetStarted",
+    component: GetStarted,
   }
   
 ];
