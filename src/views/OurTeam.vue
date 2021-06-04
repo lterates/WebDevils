@@ -26,8 +26,8 @@
                 <b-col>
                     <b-img src="../assets/luis.jpg" rounded="circle" alt="Circle image" fluid></b-img>
                 </b-col>
-                <b-col>
-                     <b-img src="../assets/eduardo.png" rounded="circle" alt="Circle image" fluid></b-img>
+                <b-col class="ml-5 mr-5">
+                    <b-img src="../assets/eduardo.png" rounded="circle" alt="Circle image" fluid></b-img>
                 </b-col>
                 <b-col>
                     <b-img src="../assets/maria.jpg" rounded="circle" alt="Circle image" fluid></b-img>
@@ -37,7 +37,7 @@
                 <b-col>
                     <h2>Luis Pires</h2>
                 </b-col>
-                <b-col>
+                <b-col class="ml-5 mr-5">
                      <h2>Eduardo Ferreira</h2>
                 </b-col>
                 <b-col>
@@ -46,10 +46,10 @@
             </b-row>
                   <b-row>
                 <b-col>
-                    <p>Programador</p>
+                    <p>Full Stack Programmer</p>
                 </b-col>
-                <b-col>
-                    <p>Desiner</p>
+                <b-col class="ml-5 mr-5">
+                    <p>Web Designer</p>
                 </b-col>
                 <b-col>
                      <p>Public Relations</p>
@@ -112,18 +112,19 @@ svg {
     z-index: 9999;
 }
 
-h2{
- font-family: 'Poppins';
+h2 {
+    font-family: 'Poppins';
     font-style: oblique;
-    font-size: 2.5em;
+    font-size: 2.3em;
+    margin-top: 4vh;
     color: #D33F49;
 }
 
 p {
  font-family: 'Poppins';
-    font-style: italic;
+    font-style: normal;
     font-size: 1.5em;
-    color: #D33F49;
+    color: black;
 }
   
 text{
