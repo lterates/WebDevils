@@ -25,6 +25,7 @@
             <b-row>
                 <b-col>
                     <b-avatar src="https://placekitten.com/300/300" size="10rem"></b-avatar>
+                    Hello World
                 </b-col>
                 <b-col>
                      <b-avatar src="https://placekitten.com/300/300" size="10rem"></b-avatar>
