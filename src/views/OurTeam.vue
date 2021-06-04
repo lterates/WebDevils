@@ -15,35 +15,33 @@
             <text>
                 <textPath xlink:href="#textcircle"
                         aria-label="All for One &amp; One for All"
-                        textLength="942">GET STARTED TODAY .</textPath>
+                        textLength="942">MEET THE TEAM .</textPath>
             </text>
         </svg>
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        
         <div id="team">
-        <h1>Our Team</h1>
         <b-container>
             <b-row>
                 <b-col>
-                    <b-avatar src="https://placekitten.com/300/300" size="10rem"></b-avatar>
-                    Hello World
+                    <b-img src="../assets/luis.jpg" rounded="circle" alt="Circle image" fluid></b-img>
                 </b-col>
                 <b-col>
-                     <b-avatar src="https://placekitten.com/300/300" size="10rem"></b-avatar>
+                     <b-img src="../assets/eduardo.png" rounded="circle" alt="Circle image" fluid></b-img>
                 </b-col>
                 <b-col>
-                    <b-avatar src="https://placekitten.com/300/300" size="10rem"></b-avatar>
+                    <b-img src="../assets/maria.jpg" rounded="circle" alt="Circle image" fluid></b-img>
                 </b-col>
             </b-row>
-           
             <b-row>
                 <b-col>
                     <h2>Luis Pires</h2>
                 </b-col>
                 <b-col>
-                     <h2>Maria Santos</h2>
+                     <h2>Eduardo Ferreira</h2>
                 </b-col>
                 <b-col>
-                    <h2>Eduardo</h2>
+                    <h2>Maria Santos</h2>
                 </b-col>
             </b-row>
                   <b-row>
@@ -62,9 +60,7 @@
     </div>
 </template>
 
-
 <script>
-
 import NavBar from "@/components/navbar.vue";
     export default ({
         name: "Blog",
@@ -88,19 +84,8 @@ import NavBar from "@/components/navbar.vue";
             }
             mouseMove()
         }
-
-
-        
     })
-
-
-
-
 </script>
-
-
-
-
 
 <style scoped>
 h1{
@@ -111,22 +96,22 @@ h1{
     font-size: 3.5em;
     color: #D33F49;
 }
-#team{
-    margin:10%;
-}
-  div {
-    overflow: hidden;
-  }
 
-  svg {
+#team {
+    margin-top: 15vh;
+}
+
+
+svg {
     width: 100px;
     position: absolute;
-    animation: rotation 4.5s infinite linear;
+    animation: rotation 4s infinite linear;
     pointer-events: none;
     transition: top 1s, left 1s;
     transition-timing-function: ease-out;
     z-index: 9999;
-  }
+}
+
 h2{
  font-family: 'Poppins';
     font-style: oblique;
@@ -134,20 +119,21 @@ h2{
     color: #D33F49;
 }
 
-p{
+p {
  font-family: 'Poppins';
     font-style: italic;
     font-size: 1.5em;
     color: #D33F49;
 }
-  text{
+  
+text{
     font-family: 'Poppins';
     font-style: italic;
     font-size: 4.5em;
     fill: #D33F49;
-  }
+}
 
-  @keyframes rotation {
+@keyframes rotation {
     from {
       transform: rotate(359deg);
     }
