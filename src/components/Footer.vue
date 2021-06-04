@@ -23,14 +23,14 @@ export default ({
         font-family: 'Poppins';
         font-style: italic;
         overflow: hidden;
-        color: #D33F49;
+        color: black;
     }
 
     a {
-        color: #D33F49;
+        color: black;
     }
 
     a:hover {
-        color: black;
+        color: #D33F49;
     }
 </style>
