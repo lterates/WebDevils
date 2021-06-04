@@ -67,12 +67,12 @@
             <h4 class="my-0 fw-normal">Enterprise</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+            <h1 class="card-title pricing-card-title">25€<small class="text-muted fw-light">/month</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
+              <li>Unlimited Reports</li>
+              <li>Powerful Analytics</li>
+              <li>Live Chat with our Team 24/7</li>
+              <li>Professional Help Center</li>
             </ul>
              <button type="button"  @click="goToGetStarted" class="w-100 btn btn-lg btn-primary" style="background-color: #D95961; border: none">Get Started</button>
           </div>

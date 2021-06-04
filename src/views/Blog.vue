@@ -3,7 +3,7 @@
         <NavBar/>
         <header class="mt-5">
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <h1 class="display-4 fw-normal" style="font-family: 'Poppins'; font-style: italic; color: #D33F49">Blog</h1>
+                <h1 class="display-4 fw-normal" style="font-family: 'Poppins'; font-style: italic; color: #D33F49">Blog Posts</h1>
             </div>
         </header>
 
@@ -20,7 +20,7 @@
             <text>
                 <textPath xlink:href="#textcircle"
                         aria-label="All for One &amp; One for All"
-                        textLength="942">GET STARTED TODAY .</textPath>
+                        textLength="942">CATCH UP WITH OUR BLOG .</textPath>
             </text>
         </svg>
         
@@ -73,24 +73,21 @@ export default ({
     components: {
         NavBar,
     },
-
-
-            mounted(){
-            const circleSvg = document.getElementById('svg1')
-
-            let mouseX = 0
-            let mouseY = 0
-            window.addEventListener('mousemove', (event) => {
-                mouseY = (event.clientY / 16) - (45 / 16) + 'rem'
-                mouseX = (event.clientX / 16) - (45 / 16) + 'rem'
-            })
-            const mouseMove = () => {
-                circleSvg.style.top = mouseY
-                circleSvg.style.left = mouseX
-                window.requestAnimationFrame(mouseMove)
-            }
-            mouseMove()
-        }
+        mounted(){
+        const circleSvg = document.getElementById('svg1')
+        let mouseX = 0
+        let mouseY = 0
+        window.addEventListener('mousemove', (event) => {
+            mouseY = (event.clientY / 16) - (45 / 16) + 'rem'
+            mouseX = (event.clientX / 16) - (45 / 16) + 'rem'
+    })
+        const mouseMove = () => {
+        circleSvg.style.top = mouseY
+        circleSvg.style.left = mouseX
+        window.requestAnimationFrame(mouseMove)
+    }
+        mouseMove()
+    }
 })
 </script>
 
@@ -114,7 +111,7 @@ export default ({
      svg {
     width: 100px;
     position: absolute;
-    animation: rotation 4.5s infinite linear;
+    animation: rotation 4s infinite linear;
     pointer-events: none;
     transition: top 1s, left 1s;
     transition-timing-function: ease-out;
