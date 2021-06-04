@@ -12,7 +12,7 @@
 
         <div id="articles">
             <b-container fluid>
-                <b-row fluid style="margin-top: 10vh" class="px-5">
+                <b-row fluid style="margin-top: 15vh;" class="px-5">
                     <b-col >
                         <h2>#1 - How to self advertise</h2>
                         <p class="mt-5">While there are plenty of people out there who love being the centre of attention, there are also those of us who prefer to stay out of the limelight. Too much self-promotion could easily come across as bragging – and that’s not good for your reputation.</p>
@@ -26,7 +26,7 @@
                     </b-col>
                 </b-row>
                 
-                <b-row style="margin-top: 20vh" class="px-5">
+                <b-row style="margin-top: 20vh;" class="px-5">
                     <b-col>
                         <b-img src="../assets/blog2.jpg" alt="Self Advertising" fluid rounded/>
                     </b-col>
@@ -37,8 +37,8 @@
                         <p>With the huge number of online users, which is almost 59% of the world’s population, marketers must not miss out on their chance of marketing on these digital forums where they can reach all the maximum number of potential buyers compared with print or television media marketing.</p>
                     </b-col>
                 </b-row>
-
-                <b-row style="margin-top: 20vh" class="px-5 pb-5">
+                
+                <b-row style="margin-top: 20vh;" class="px-5 pb-5">
                     <b-col class="ml-5">
                         <h2>#3 - Five Summer Blog Ideas</h2>
                         <p class="mt-5">Can’t believe it’s already time to share our next season’s blog post idea list! 
