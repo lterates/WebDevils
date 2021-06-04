@@ -1,7 +1,7 @@
 <template>
     <div class="blog">
         <NavBar/>
-        <header class="mt-5">
+        <header class="mt-4">
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
                 <h1 class="display-4 fw-normal" style="font-family: 'Poppins'; font-style: italic; color: #D33F49">Blog Posts</h1>
             </div>
@@ -12,7 +12,7 @@
                 <b-row fluid style="margin-top: 10vh" class="px-5">
                     <b-col >
                         <h2>#1 - How to self advertise</h2>
-                        <p>While there are plenty of people out there who love being the centre of attention, there are also those of us who prefer to stay out of the limelight. Too much self-promotion could easily come across as bragging – and that’s not good for your reputation.</p>
+                        <p class="mt-5">While there are plenty of people out there who love being the centre of attention, there are also those of us who prefer to stay out of the limelight. Too much self-promotion could easily come across as bragging – and that’s not good for your reputation.</p>
                         <p>The last thing you want is to start your social media profiles, begin establishing your personal brand, and discover that you’re coming off as a bragging, pompous, idiot. The overwhelming threat of “making the wrong impression” can convince would-be entrepreneurs, creative minds, and freelancers to avoid self-marketing entirely. However, this could mean that you miss out on valuable opportunities to boost your career. </p>
                         <p> While speaking highly of yourself might feel uncomfortable, it serves an important purpose. After all, if you’re not willing to sing your praises, who will be? </p>
                         <p> Effective self-promotional strategies are all about finding the balance between demonstrating your skills and boasting about them. As difficult as it can be to toe that line if you can get your promotional methods right, you could find that they open the door to promotions, new clients, and incredible opportunities. </p>
@@ -23,27 +23,24 @@
                     </b-col>
                 </b-row>
                 
-                <b-row style="margin-top: 15vh" class="px-5">
+                <b-row style="margin-top: 20vh" class="px-5">
                     <b-col>
                         <b-img src="../assets/blog2.jpg" alt="Self Advertising" fluid rounded/>
                     </b-col>
                     <b-col class="ml-5">
                         <h2> #2 - The importance of social media marketing</h2>
-                        <p>Social media has become the most influential and important virtual space where the platform is not only used for social networking but is also a great way of digitally advertising your brand and your products. </p>
+                        <p class="mt-5">Social media has become the most influential and important virtual space where the platform is not only used for social networking but is also a great way of digitally advertising your brand and your products. </p>
                         <p>Social media's power is commendable as you get to reach a large number of people within seconds of posting an ad, helping you reduce your costs, and making your ads reach out to your potential audience through these social media advertisements.</p>
                         <p>With the huge number of online users, which is almost 59% of the world’s population, marketers must not miss out on their chance of marketing on these digital forums where they can reach all the maximum number of potential buyers compared with print or television media marketing.</p>
                     </b-col>
                 </b-row>
 
-                <b-row style="margin-top: 15vh" class="px-5">
+                <b-row style="margin-top: 20vh" class="px-5 pb-5">
                     <b-col class="ml-5">
-                        <h2>#3 - 5 Summer Blog Ideas</h2>
-                        <p>Can’t believe it’s already time to share our next season’s blog post idea list! Summer is always tough in blogging because who doesn’t want to 
-                            just be outside? We tried to make most of these ideas experienced-based, meaning that you actually have to go outside and *do* things in order to 
-                            write the blog post. It seems like a long process, but that results in really fun experiences and it also means that with each event comes not just 
-                            one quality blog post but often many. If you’re strategic about documenting your summer fun, you’ll be left with tons of engaging content for your 
-                            readers to enjoy! Onto the blog post ideas…
-
+                        <h2>#3 - Five Summer Blog Ideas</h2>
+                        <p class="mt-5">Can’t believe it’s already time to share our next season’s blog post idea list! 
+                        <p> Summer is always tough in blogging because who doesn’t want to just be outside? We tried to make most of these ideas experienced-based, meaning that you actually have to go outside and *do* things in order to write the blog post. It seems like a long process, but that results in really fun experiences and it also means that with each event comes not just one quality blog post but often many. </p> 
+                        <p>If you’re strategic about documenting your summer fun, you’ll be left with tons of engaging content for your readers to enjoy! Onto the blog post ideas:</p>
                             <p>1. Create a neighborhood guide for your fave hood in your city </p>
                             <p>2. Style a sunset shoot and turn it into an event to enjoy with your friends or partner.</p>
                             <p>3. Look on your own actual bookshelf to create a summer reading list of old faves you want to revisit</p>
@@ -51,7 +48,7 @@
                             <p>5. Take photos at a summer craft fair and promote some of the brands</p>
                     </b-col>
                     <b-col>
-                        <b-img src="../assets/blog1.jpg" alt="Self Advertising" style="max-height: 500px" center fluid shadow-lg rounded/>
+                        <b-img src="../assets/blog3.jpg" alt="Self Advertising" fluid rounded/>
                     </b-col>
                 </b-row>
             </b-container>
@@ -83,7 +80,6 @@ main {
 p {
     color: black;
     font-style: normal;
-    margin-top: 4vh;
 }
 
 #articles {
