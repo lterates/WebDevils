@@ -23,11 +23,11 @@
         <b-form-group
             id="input-group-1"
             label="Company"
-            label-for="input-1"
+            label-for="input-group-company"
             description="Type your brand name if you don't have a company"
         >
             <b-form-input
-            id="input-1"
+            id="input-company"
             v-model="form.company"
             type="company"
             placeholder="Enter Company Name"
@@ -35,18 +35,27 @@
             ></b-form-input>
         </b-form-group>
 
-        <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+        <b-form-group id="input-group-name" label="Name" label-for="input-name">
             <b-form-input
-            id="input-2"
+            id="input-name"
             v-model="form.name"
             placeholder="Enter name"
             required
             ></b-form-input>
         </b-form-group>
 
-         <b-form-group id="input-group-2" label="Your phone number" label-for="input-2">
+        <b-form-group id="input-group-email" label="Email" label-for="input-email">
             <b-form-input
-            id="input-2"
+            id="input-email"
+            v-model="form.email"
+            placeholder="Enter your email"
+            required
+            ></b-form-input>
+        </b-form-group>
+
+         <b-form-group id="input-group-phone" label="Phone Number" label-for="input-phone">
+            <b-form-input
+            id="input-phone"
             v-model="form.phone"
             placeholder="Enter your phone number"
             required
@@ -77,6 +86,7 @@ export default {
           company: '',
           name: '',
           phone:'',
+          email:''
         },
         show: true
       }
@@ -97,6 +107,7 @@ export default {
         this.form.company = ''
         this.form.name = ''
         this.form.phone = ''
+        this.form.email = ''
 
         // Trick to reset/clear native browser form validation state
         this.show = false

@@ -40,7 +40,7 @@
               <li>Email support</li>
               <li>Help center access</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-dark">Sign up for our Newsletter</button>
+            <button type="button"  @click="goToGetStarted" class="w-100 btn btn-lg btn-primary" style="background-color: #D95961; border: none">Get Started</button>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
               <li>Priority email support</li>
               <li>Help center access</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary" style="background-color: #D95961; border: none">Get Started</button>
+            <button type="button"  @click="goToGetStarted" class="w-100 btn btn-lg btn-primary" style="background-color: #D95961; border: none">Get Started</button>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
               <li>Phone and email support</li>
               <li>Help center access</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary" style="background-color: #D95961; border: none">Contact Us</button>
+             <button type="button"  @click="goToGetStarted" class="w-100 btn btn-lg btn-primary" style="background-color: #D95961; border: none">Get Started</button>
           </div>
         </div>
       </div>
@@ -91,6 +91,14 @@ export default ({
     components: {
         NavBar,
     },
+
+    methods:{
+      goToGetStarted(){
+        this.$router.push('/getStarted')
+      }
+      
+    },
+
 
       mounted(){
             const circleSvg = document.getElementById('svg1')
