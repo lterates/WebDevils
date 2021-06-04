@@ -2,8 +2,11 @@
     <div class="blog">
         <NavBar/>
         <header class="mt-4">
-            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <h1 class="display-4 fw-normal" style="font-family: 'Poppins'; font-style: italic; color: #D33F49">Blog Posts</h1>
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center" style="position: relative; text-align: center; max-width: 500px">
+                <svg id="blob" viewBox="0 0 200 200" style="transform: rotate(90deg)" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="rgba(211, 63, 73, 0.15)" d="M18.9,-25.7C23.4,-9.3,25.4,-1.5,24.8,7.4C24.1,16.4,20.9,26.4,9.8,39C-1.4,51.6,-20.3,66.6,-32.9,62.7C-45.5,58.8,-51.7,36,-56.9,13C-62.2,-10,-66.5,-33.3,-56.9,-50.8C-47.2,-68.4,-23.6,-80.2,-8.2,-73.7C7.1,-67.1,14.3,-42.1,18.9,-25.7Z" transform="translate(100 100)" />
+                </svg>
+                <div><h1 class="display-4 fw-normal" style="font-family: 'Poppins'; font-style: italic; color: #D33F49;" text-center>Blog Posts</h1></div>
             </div>
         </header>
 
@@ -90,15 +93,11 @@ p {
     text-align: left;
 }
 
-
-svg {
-    width: 100px;
+#blob {
+    width: 450px;
     position: absolute;
-    animation: rotation 4s infinite linear;
-    pointer-events: none;
-    transition: top 1s, left 1s;
-    transition-timing-function: ease-out;
-    z-index: 9999;
+    top: -100%;
+    left: 0rem;
   }
 
 text {
@@ -106,14 +105,5 @@ text {
     font-style: italic;
     font-size: 4.5em;
     fill: #D33F49;
-  }
-
-@keyframes rotation {
-  from {
-    transform: rotate(359deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
 }
 </style>
