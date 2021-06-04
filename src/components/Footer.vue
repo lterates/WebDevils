@@ -1,5 +1,5 @@
 <template>
-    <div style="position: fixed; bottom: 1rem; width: 100%">
+    <div style="position: fixed; bottom: 0rem; width: 100%" class="py-3">
         <span style="position: fixed; left: 10rem"><i>&copy; 2021 WebDevils</i></span>
         <a href="https://www.facebook.com/webdevilsofficial/" target="_blank"><b-icon icon="facebook" style="margin-right: 10px;"></b-icon></a>
         <a href="https://www.instagram.com/webdevilsofficial/" target="_blank"><b-icon icon="instagram" style="margin-right: 10px;"></b-icon></a>
@@ -24,6 +24,7 @@ export default ({
         font-style: italic;
         overflow: hidden;
         color: black;
+        background-color: rgba(255, 255, 255, .8);
     }
 
     a {
