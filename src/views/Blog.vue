@@ -73,7 +73,7 @@
           <b-col class="px-5">
             <b-img
               src="../assets/pride.jpg"
-              alt="Self Advertising"
+              alt="Pride"
               fluid
               rounded
             />
