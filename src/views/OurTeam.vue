@@ -27,7 +27,7 @@
                     <b-img src="../assets/luis.jpg" rounded="circle" alt="Circle image" fluid></b-img>
                 </b-col>
                 <b-col class="ml-5 mr-5">
-                    <b-img src="../assets/eduardo.png" rounded="circle" alt="Circle image" fluid></b-img>
+                    <b-img src="../assets/eduardo.jpg" rounded="circle" alt="Circle image" fluid></b-img>
                 </b-col>
                 <b-col>
                     <b-img src="../assets/maria.jpg" rounded="circle" alt="Circle image" fluid></b-img>
