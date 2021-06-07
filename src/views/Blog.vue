@@ -36,7 +36,6 @@
           <b-col>
             <h2>#1 - How to make your business more LGBTQ+ friendly</h2>
             <p class="mt-5">Hey everyone, happy pride! 🏳️‍🌈</p>
-            <p></p>
             <p>
               Given that it's pride month we thought there would be no better
               opportunity to give you some tips on how to make your business as
@@ -71,12 +70,7 @@
             </p>
           </b-col>
           <b-col class="px-5">
-            <b-img
-              src="../assets/pride.jpg"
-              alt="Pride"
-              fluid
-              rounded
-            />
+            <b-img src="../assets/pride.jpg" alt="Pride Image" fluid rounded/>
           </b-col>
         </b-row>
       </b-container>

@@ -30,8 +30,9 @@
             value="accepted"
             unchecked-value="declined"
         >
-      I accept the terms and use
-    </b-form-checkbox>
+      I accept the Terms and Conditions 
+    </b-form-checkbox> <br>
+    <p style="color: black; margin: 0%; font-size: 0.92rem;" class="text-center">After Submiting, please Confirm your Email in your inbox</p>
       </form>
     </b-modal>
   </div>

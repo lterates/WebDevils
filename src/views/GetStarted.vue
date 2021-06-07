@@ -17,6 +17,11 @@
                         textLength="942">GET STARTED TODAY .</textPath>
             </text>
         </svg>
+        
+        <div id="blobForm" class="" style="position: relative; text-align: center;">
+        <svg id="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path fill="rgba(211, 63, 73, 0.15)" d="M40.5,-67.5C53.7,-62.5,66.5,-54.1,72.6,-42.3C78.7,-30.5,78.1,-15.3,73.2,-2.8C68.3,9.6,59.2,19.3,53.4,31.5C47.5,43.6,44.8,58.3,36.4,66C28.1,73.7,14,74.4,-0.3,74.9C-14.7,75.5,-29.3,75.8,-40.5,69.8C-51.8,63.7,-59.5,51.3,-63.2,38.6C-66.9,25.9,-66.4,13,-65.2,0.7C-63.9,-11.5,-61.9,-23,-56.5,-32.8C-51.2,-42.6,-42.5,-50.6,-32.5,-57.4C-22.6,-64.3,-11.3,-70,1.2,-72C13.6,-74,27.3,-72.4,40.5,-67.5Z" transform="translate(100 100)" />
+        </svg>
 
         <div id="form">
         <b-form @submit="onSubmit" @reset="onReset">
@@ -61,27 +66,40 @@
             required
             ></b-form-input>
         </b-form-group>
-
-
-        <b-button type="submit" variant="danger">Submit</b-button>
-
+        
+        <b-form-group id="input-group-plan" label="Selected Plan" label-for="input-plan">
+          <b-form-select required id="input-plan" v-model="selected" :options="options"></b-form-select>
+          <div class="mt-3" v-if="selected!=null">Selected: <strong>{{ selected }}</strong></div>
+        </b-form-group><br>
+        <b-button type="submit" variant="danger">Register</b-button>
         </b-form>
-         </div>
+        </div>
+        </div>
+      <Footer/>
     </div>
 </template>
 
 <script>
 import NavBar from "@/components/navbar.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Home",
   components: {
-    NavBar
-
+    NavBar,
+    Footer
   },
 
   data(){
     return{
+        selected: null,
+        options: [
+          {value: null, text: "Please pick a Plan"},
+          {value: 'Free', text: "Free Plan"},
+          {value: 'Pro', text: "Pro Plan"},
+          {value: 'Enterprise', text: "Enterprise Plan"},
+        ],
+
         form: {
           company: '',
           name: '',
@@ -139,15 +157,28 @@ export default {
 
 
 <style scoped>
+.getStarted {
+  font-family: 'Poppins';
+  font-style: normal;
+  color: black;
+}
+
+#blob {
+  z-index: -1;
+  width: 45vw;
+  position: absolute;
+  left: 26vw;
+  top: -18vh;
+}
+
 #form{
-    margin-top: 10%;
+    margin-top: 12vh;
     margin-inline: auto;
     min-width: 210px;
     max-width: 20%;
 }
 
-
-  svg {
+#svg1 {
     width: 100px;
     position: absolute;
     animation: rotation 4.5s infinite linear;
