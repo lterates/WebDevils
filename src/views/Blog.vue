@@ -70,7 +70,7 @@
             </p>
           </b-col>
           <b-col class="px-5">
-            <b-img src="../assets/pride.jpg" alt="Pride Image" fluid rounded/>
+            <b-img src="../assets/prideParade.jpg" alt="Pride Image" fluid rounded/>
           </b-col>
         </b-row>
       </b-container>
